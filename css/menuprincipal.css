@@ -1,3 +1,9 @@
+:root
+{
+--laranjaPosBotaoCadastro: rgb(220, 150, 60);
+--laranjaEspecifico: chocolate;
+}
+
 *
 {
     margin: 0;
@@ -7,7 +13,7 @@
 html, body
 {
     width: 100%;
-    height: 5500px;
+    height: 3000px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,16 +24,17 @@ html, body
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 1px solid black;
 }
 
 .linksMenuPrincipal
 {
-    width: 20%;
+    width: 15%;
     height: 70px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5px;
 }
 
 .logotipoMenuPrincipal
@@ -54,33 +61,33 @@ html, body
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-    border: 3px solid chocolate;
-    transition-duration: 0.5s;
+    border: 3px solid var(--laranjaEspecifico);
     font-weight: bold;
     font-size: 17px;
     text-decoration: none;
+    transition-duration: 0.4s;
 }
 
 .btnLoginMenuPrincipal
 {
-    background-color: white;
-    color: chocolate;
+    background-color: #fff;
+    color: var(--laranjaEspecifico);
 }
 
 .btnLoginMenuPrincipal:hover
 {
-    background-color: chocolate;
+    background-color: var(--laranjaEspecifico);
     color: #fff;
 }
 
 .btnCadastroMenuPrincipal
 {
-    background-color: chocolate;
+    background-color: var(--laranjaEspecifico);
     color: #fff;
 }
 
 .btnCadastroMenuPrincipal:hover
 {
-    background-color: rgb(220, 150, 60);
-    border: 3px solid rgb(220, 150, 60);
+    background-color: var(--laranjaPosBotaoCadastro);
+    border: 3px solid var(--laranjaPosBotaoCadastro);
 }

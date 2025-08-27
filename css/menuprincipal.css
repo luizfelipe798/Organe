@@ -3,3 +3,84 @@
     margin: 0;
     padding: 0;
 }
+
+html, body
+{
+    width: 100%;
+    height: 5500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuPrincipal
+{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linksMenuPrincipal
+{
+    width: 20%;
+    height: 70px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotipoMenuPrincipal
+{
+    width: 100%;
+    height: 70px;
+}
+
+.botoesMenuPrincipal
+{
+    width: 30%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnLoginMenuPrincipal, .btnCadastroMenuPrincipal
+{
+    width: 35%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 3px solid chocolate;
+    transition-duration: 0.5s;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.btnLoginMenuPrincipal
+{
+    background-color: white;
+    color: chocolate;
+}
+
+.btnLoginMenuPrincipal:hover
+{
+    background-color: chocolate;
+    color: #fff;
+}
+
+.btnCadastroMenuPrincipal
+{
+    background-color: chocolate;
+    color: #fff;
+}
+
+.btnCadastroMenuPrincipal:hover
+{
+    background-color: rgb(220, 150, 60);
+    border: 3px solid rgb(220, 150, 60);
+}

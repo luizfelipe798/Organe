@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +11,7 @@
 <body>
     <?php
         include("includes/menu.php");
+        include("saudacao.php");
     ?>
 </body>
 </html>

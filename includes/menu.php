@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <menu class="menuPrincipal">
     <img src="" alt="Logo Organe" class="imagemLogoMenuPrincipal">
 

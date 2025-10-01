@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <div class="saudacaousuariologado">
     <?php
         if(isset($_SESSION['login']))

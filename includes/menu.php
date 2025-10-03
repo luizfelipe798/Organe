@@ -2,6 +2,7 @@
     session_start();
 ?>
 
+<link rel="stylesheet" href="css/menu.css">
 <menu class="menuPrincipal">
     <img src="" alt="Logo Organe" class="imagemLogoMenuPrincipal">
 

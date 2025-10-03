@@ -1,5 +1,21 @@
+:root
+{
+    --corMenuPrincipal: #0d6efd;
+    --corLinksMenuPrincipal: #ffffff;
+    --corLinksMenuPrincipalHover: #d4d4d4;
+}
+
 *
 {
     margin: 0;
     padding: 0;
+}
+
+.menuPrincipal
+{
+    background-color: var(--corMenuPrincipal);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }

@@ -1,23 +1,30 @@
 <?php
-    $nomeBanco = "Organe";
-    $usuario = "root";
-    $senha = "815674815";
-    $servidor = "localhost";
-    $porta = "3306";
+    // Esse arquivo é responsável por conectar e desconectar do banco de dados MySQL
+    // e retornar a conexão quando necessário
 
-    function conectarBanco($nomeBanco, $usuario, $senha, $servidor, $porta)
+    // Retorna objeto myhsqli, que representa a conexão com o banco de dados
+    function conecta() : mysqli
     {
-        $conexao = mysqli_connect($servidor, $usuario, $senha, $nomeBanco, $porta);
+        $servidor = 'localhost';
+        $banco = 'organe';
+        $port = 3306;
+        $usuario = 'root';
+        $senha = '815674815';
+
+        $conexao = mysqli_connect($servidor, $usuario, $senha, $banco, $port);
 
         if(!$conexao)
         {
-            die("Conexão falhou: " . mysqli_connect_error());
-        }
+            echo 'Erro: Não foi possível conectar ao MySql.' . PHP_EOL;
+            echo 'Debugging error: ' . mysqli_connect_error() . PHP_EOL;
 
+            return null;
+        }
+        
         return $conexao;
     }
 
-    function fecharConexao($conexao)
+    function desconecta($conexao)
     {
         mysqli_close($conexao);
     }

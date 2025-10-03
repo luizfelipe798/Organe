@@ -11,8 +11,14 @@
     padding: 0;
 }
 
+body 
+{
+    width: 100%; 
+}
+
 .menuPrincipal
 {
+    width: 100%;
     background-color: var(--corMenuPrincipal);
     height: 70px;
     display: flex;

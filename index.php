@@ -7,5 +7,10 @@
     <?php
         include("includes/menu.php");
     ?>
+
+
+    <?php
+        include("includes/rodape.php");
+    ?>
 </body>
 </html>
